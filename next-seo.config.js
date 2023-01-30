@@ -1,24 +1,23 @@
 /** @type {import('next-seo').DefaultSeoProps} */
 const defaultSEOConfig = {
-  title: "nextarter-chakra",
-  titleTemplate: "%s | nextarter-chakra",
-  defaultTitle: "nextarter-chakra",
-  description: "Next.js + chakra-ui + TypeScript template",
-  canonical: "https://nextarter-chakra.sznm.dev",
+  titleTemplate: "%s",
+  defaultTitle: "AI Keyboard",
+  description: "Generate anything at your keyboard",
+  canonical: "https://aikeyboard.app",
   openGraph: {
-    url: "https://nextarter-chakra.sznm.dev",
-    title: "nextarter-chakra",
-    description: "Next.js + chakra-ui + TypeScript template",
+    url: "https://aikeyboard.app",
+    title: "AI Keyboard",
+    description: "Generate anything at your keyboard",
     images: [
       {
-        url: "https://og-image.sznm.dev/**nextarter-chakra**.sznm.dev.png?theme=dark&md=1&fontSize=125px&images=https%3A%2F%2Fsznm.dev%2Favataaars.svg&widths=250",
-        alt: "nextarter-chakra.sznm.dev og-image",
+        url: "/SEO_image.png",
+        alt: "AI Keyboard og-image",
       },
     ],
-    site_name: "nextarter-chakra",
+    site_name: "Ai Keyboard",
   },
   twitter: {
-    handle: "@sozonome",
+    handle: "@kevinahmad",
     cardType: "summary_large_image",
   },
 };
