@@ -75,8 +75,8 @@ const Home = () => {
             Add me to the waitlist!
           </Button>
           <Text fontWeight="hairline" mt="5" textAlign="center">
-            We will give you an email notification when the keyboard is live if
-            you're on the waitlist!
+            Stay in the loop with our keyboard launch. Sign up for the waitlist
+            now 🔔💻
           </Text>
           <Image src="demo.gif" borderRadius="20" maxW="90%" mt="50" />
           <Flex mt="50" justifyContent="space-evenly">
