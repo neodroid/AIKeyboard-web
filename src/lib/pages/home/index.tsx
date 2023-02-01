@@ -29,6 +29,7 @@ const Home = () => {
   const handleChange = (event: { target: { value: SetStateAction<string> } }) =>
     setUserEmail(event.target.value);
   const handleClick = async () => {
+    onClose();
     try {
       await fetch("https://callisto-api.vercel.app/api/waitlist", {
         method: "POST",
@@ -42,7 +43,6 @@ const Home = () => {
     } catch (error) {
       // console.error(error);
     }
-    onClose();
   };
   return (
     <>
