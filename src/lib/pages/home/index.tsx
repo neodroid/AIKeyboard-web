@@ -31,7 +31,7 @@ const Home = () => {
   const handleClick = async () => {
     onClose();
     try {
-      await fetch("https://callisto-api.vercel.app/api/waitlist", {
+      await fetch("/api/waitlist", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
