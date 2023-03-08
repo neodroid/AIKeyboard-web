@@ -2,7 +2,6 @@ import {
   Button,
   Flex,
   FormControl,
-  Icon,
   Image,
   Input,
   Modal,
@@ -19,12 +18,10 @@ import { NextSeo } from "next-seo";
 import Link from "next/link";
 import type { SetStateAction } from "react";
 import { useRef, useState } from "react";
-// import Banner from "../../components/Banner"
-import { FiInfo } from "react-icons/fi";
 
 const Home = () => {
   const initialRef = useRef(null);
-  const { isOpen, onOpen, onClose } = useDisclosure();
+  const { isOpen, onClose } = useDisclosure();
   const [userEmail, setUserEmail] = useState("");
   const handleChange = (event: { target: { value: SetStateAction<string> } }) =>
     setUserEmail(event.target.value);
@@ -65,19 +62,24 @@ const Home = () => {
           <Text fontSize="xl" fontWeight="light" textAlign="center">
             Generate anything at your keyboard
           </Text>
-          <Flex mt="10">
+          {/* <Flex mt="10">
             <Icon as={FiInfo} boxSize="6" />
             <Text textAlign="center">
               We are currently on Apple Appstore submission review!
             </Text>
-          </Flex>
-          <Button mt="5" p="7" onClick={onOpen}>
-            Add me to the waitlist!
-          </Button>
-          <Text fontWeight="hairline" mt="5" textAlign="center">
+          </Flex> */}
+          <Link
+            href="https://apps.apple.com/us/app/ai-keyboard-easy-smart-type/id1668038748"
+            target="_blank"
+          >
+            <Button mt="5" p="5">
+              Download
+            </Button>
+          </Link>
+          {/* <Text fontWeight="hairline" mt="5" textAlign="center">
             Stay in the loop with our keyboard launch. Sign up for the waitlist
             now 🔔💻
-          </Text>
+          </Text> */}
           <Image src="demo.gif" borderRadius="20" maxW="90%" mt="50" />
           <Flex mt="50" justifyContent="space-evenly">
             <Flex mr="10">
